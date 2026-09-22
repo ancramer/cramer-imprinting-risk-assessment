@@ -1,3 +1,4 @@
-This repo is outdated and has been superseded by the newer [Modeling and Data Science Project Template](https://github.com/andreashandel/mds-project-template).
+This repo contains code used to generate analysis and figures for "The impact of 
+immune imprinting on spatial risks for a future influenza pandemic in the United 
+States".
 
-Please use that newer template to start a new project.
