@@ -426,7 +426,7 @@ ggsave(here("code", "figs", "comorb_and_age_risk_by_age_group.png"), plot = q)
 #save to send to Bren or to put into maps. Final version, contains risk weighted by age group, and
 # Population per county is weighted by how much geographical space each zip takes 
 # up within county borders.
-write.csv(county_avg_both2, here("data", "processed-data", "county_risk_weighted_with_dups.csv"), row.names = FALSE)
+write.csv(county_avg_both_with_ages, here("data", "processed-data", "county_risk_weighted_with_dups.csv"), row.names = FALSE)
 # avg_X is weighted average number of people in the age group in the county
 # avg_ is the weighted risk for the age group for the county
 # made somewhere around line 378
