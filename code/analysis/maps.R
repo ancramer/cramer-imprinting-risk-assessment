@@ -78,18 +78,3 @@ p2 <- county_risk_plots |>
   theme_map()
 
 p2
-
-## Find risk for a specific county
-county_risk |> 
-  filter(fips == "12119") |> 
-  glimpse()
-
-
-## Find number of counties that are at a risk of 0.30 or greater
-county_risk |> 
-  filter(risk_severe_H5 > 0.35) |> 
-  nrow()/3222
-
-county_risk |> 
-  filter(risk_severe_H7 > 0.35) |> 
-  nrow()/3222
