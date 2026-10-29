@@ -238,6 +238,9 @@ county_avg_both <- combined_weighted %>%
 #remove 1st row which was an average of weird NA counties that have barely any people living in them and no risk data
 county_avg_both2 <- county_avg_both[-1, ]
 
+# save this for later plotting
+write.csv(county_avg_both2, here("data", "processed-data", "county_avg_both2.csv"), row.names = FALSE)
+
 ########################################################################################
 #### Add in CDC high risk age groups
 # 2 and under and 65 and older go to risk=1
